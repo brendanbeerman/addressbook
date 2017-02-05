@@ -1,6 +1,13 @@
 language: java
 install:
-  - mvn install
+- mvn install
 jdk:
-  - oraclejdk8
-  
+- oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: DYEM+SW3afo2agkDDtaPeSftylHtTGJTPGZFvHpC1vciz5KB3hytWVURl4EUGQB/AEahp2q/UFaiR4TeHz3pjBMoPm+r/Zza3a8OTwzCR9Ioq4wXADYeybH7panT2et4c/IDbuBLtDkO4uEIMHZ4bmtkX16M2GkMulIJ3+1zberNngs6d+6kMG0aD1dFFNk0uvIRFFqU/UmdiDGzVNUhqWlpspBHBQETY0kJwbWMzLqcV+WXacYYFAzpSrD/x8yYejPP6eV4Tids0dKxToejC0zNusajJ52EMS3TOU+n/oN12jfqzqaQHbJr6nl3giUf8CwQQszuVuk78BAKtBewLA7/CU33cxCk6PTB38HawGyuiq9kB4V82UKiO6acUWRXHuliDafVXK24ZgM3hOp/dKdNpNzxavpD721tvyVk2LA5kTFyxk1ADTbzyhb54kKQ8MjCbk+Cap6KcxMWIfDl9kaRfmwRUSkGbzB/ODx/3YxZd5hEA0BeU2tXr2z6RF1FEH5OArdPbqegFluNjGqki5CDOa1/PJxtxhvDOC6nvrCE9ZAk1scc991Rpbv6PdDHgfhnGD6JjKgO9qkB5yc9ziCQSVBt16XNv/8O9A/+/EmNPMuTWsuf6OX1VvSIRFsKBZbeBn0e45zqsjouc4nAoBDL03oaEMs4+f36cCHYV7Y=
+  app: cs3130brendanbeermantodo-task
+  on:
+    repo: brendanbeerman/addressbook
+    branch: todo_tasks
